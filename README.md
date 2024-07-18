@@ -1,1 +1,3 @@
-# YelpCamp
+node_modules/
+
+.env
