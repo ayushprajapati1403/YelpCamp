@@ -18,7 +18,8 @@ const options = {
 
 const mongoose=require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/yelp-camp')
+const  dbUrl=process.env.db_url || 'mongodb://localhost:27017/yelp-camp';
+mongoose.connect(dbUrl)
 .then(()=>{
 	console.log('database connected')
 })
