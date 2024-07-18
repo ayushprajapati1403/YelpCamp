@@ -1,0 +1,22 @@
+/* transition.css */
+body {
+    transition-property: opacity, transform, filter, background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 800ms; /* Longer duration for a more noticeable effect */
+}
+
+body.transition {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.05); /* Slight scale effect */
+    filter: blur(10px); /* Increased blur for dramatic effect */
+}
+
+/* Additional styles for smooth transition */
+html {
+    overflow: hidden; /* Prevent scrolling during transition */
+}
+
+body {
+    position: relative;
+}
